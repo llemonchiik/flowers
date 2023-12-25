@@ -1,0 +1,371 @@
+<html>
+<head>
+<title>flower.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #2aacb8;}
+.s2 { color: #6aab73;}
+.s3 { color: #7a7e85;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+flower.css</font>
+</center></td></tr></table>
+<pre><span class="s0">*,</span>
+<span class="s0">*::after,</span>
+<span class="s0">*::before{</span>
+    <span class="s0">padding: </span><span class="s1">0</span><span class="s0">;</span>
+    <span class="s0">margin: </span><span class="s1">0</span><span class="s0">;</span>
+    <span class="s0">box-sizing: border-box;</span>
+<span class="s0">}</span>
+
+<span class="s0">:root{</span>
+    <span class="s0">--color-bg: linear-gradient(to top,#</span><span class="s1">010329</span><span class="s0">,#</span><span class="s1">000005</span><span class="s0">);</span>
+    <span class="s0">--color-glass:linear-gradient(to left,#</span><span class="s1">142544</span><span class="s0">,#</span><span class="s1">1</span><span class="s0">a9092);</span>
+    <span class="s0">--color-water:linear-gradient(to left,#</span><span class="s1">142544</span><span class="s0">,#</span><span class="s1">1</span><span class="s0">b6d6e);</span>
+<span class="s0">}</span>
+
+<span class="s0">body{</span>
+    <span class="s0">background-image:var(--color-bg);</span>
+    <span class="s0">min-height: </span><span class="s1">100</span><span class="s0">vh;</span>
+    <span class="s0">display: flex;</span>
+    <span class="s0">justify-content: center;</span>
+    <span class="s0">align-items:flex-end;</span>
+    <span class="s0">overflow: hidden;</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower{</span>
+    <span class="s0">position: relative;</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__glass{</span>
+    <span class="s0">width:</span><span class="s1">20</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">30</span><span class="s0">vmin;</span>
+    <span class="s0">background-image: var(--color-glass);</span>
+    <span class="s0">clip-path: polygon(</span><span class="s1">0 0</span><span class="s0">, </span><span class="s1">100</span><span class="s0">% </span><span class="s1">0</span><span class="s0">, </span><span class="s1">85</span><span class="s0">% </span><span class="s1">100</span><span class="s0">%, </span><span class="s1">15</span><span class="s0">% </span><span class="s1">100</span><span class="s0">%);</span>
+    <span class="s0">opacity: .</span><span class="s1">8</span><span class="s0">;</span>
+    <span class="s0">position: relative;</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__glass::after{</span>
+    <span class="s0">content: </span><span class="s2">''</span><span class="s0">;</span>
+    <span class="s0">position: absolute;</span>
+    <span class="s0">bottom: </span><span class="s1">0</span><span class="s0">;</span>
+    <span class="s0">left: </span><span class="s1">0</span><span class="s0">;</span>
+    <span class="s0">background-color: #</span><span class="s1">182843</span><span class="s0">;</span>
+    <span class="s0">width: </span><span class="s1">100</span><span class="s0">%;</span>
+    <span class="s0">height: </span><span class="s1">2</span><span class="s0">vmin;</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__glass::before{</span>
+    <span class="s0">content: </span><span class="s2">''</span><span class="s0">;</span>
+    <span class="s0">position: absolute;</span>
+    <span class="s0">bottom: </span><span class="s1">0</span><span class="s0">;</span>
+    <span class="s0">left: </span><span class="s1">0</span><span class="s0">;</span>
+    <span class="s0">background-image: var(--color-water);</span>
+    <span class="s0">width: </span><span class="s1">100</span><span class="s0">%;</span>
+    <span class="s0">height: </span><span class="s1">15</span><span class="s0">vmin;</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper{</span>
+    <span class="s0">position: absolute;</span>
+    <span class="s0">left: </span><span class="s1">45</span><span class="s0">%;</span>
+    <span class="s0">bottom: </span><span class="s1">2</span><span class="s0">vmin;</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--2{</span>
+    <span class="s0">left: </span><span class="s1">50</span><span class="s0">%;</span>
+    <span class="s0">bottom: </span><span class="s1">5</span><span class="s0">%;</span>
+    <span class="s0">transform-origin: </span><span class="s1">10</span><span class="s0">% left;</span>
+    <span class="s0">transform: rotate(</span><span class="s1">20</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--3{</span>
+    <span class="s0">left: </span><span class="s1">30</span><span class="s0">%;</span>
+    <span class="s0">bottom: </span><span class="s1">5</span><span class="s0">%;</span>
+    <span class="s0">transform-origin: </span><span class="s1">10</span><span class="s0">% left;</span>
+    <span class="s0">transform: rotate(-</span><span class="s1">10</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--3 .flower__line{</span>
+    <span class="s0">height: </span><span class="s1">45</span><span class="s0">vmin;</span>
+    <span class="s0">position: relative;</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--3 .flower__line::after{</span>
+    <span class="s0">content: </span><span class="s2">''</span><span class="s0">;</span>
+    <span class="s0">position: absolute;</span>
+    <span class="s0">left:</span><span class="s1">0</span><span class="s0">;</span>
+    <span class="s0">top: </span><span class="s1">0</span><span class="s0">;</span>
+    <span class="s0">width: </span><span class="s1">6</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">6</span><span class="s0">vmin;</span>
+    <span class="s0">transform: translate(-</span><span class="s1">69</span><span class="s0">%,-</span><span class="s1">30</span><span class="s0">%) rotate(-</span><span class="s1">5</span><span class="s0">deg);</span>
+    <span class="s0">border-radius:</span><span class="s1">10</span><span class="s0">vmin </span><span class="s1">10</span><span class="s0">vmin </span><span class="s1">0 0</span><span class="s0">;</span>
+    <span class="s0">border: </span><span class="s1">2</span><span class="s0">vmin solid  #</span><span class="s1">104</span><span class="s0">d4e;</span>
+    <span class="s0">border-bottom: transparent;</span>
+    <span class="s0">border-left: transparent;</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--3 .flower__line::before{</span>
+    <span class="s0">content: </span><span class="s2">''</span><span class="s0">;</span>
+    <span class="s0">position: absolute;</span>
+    <span class="s0">left:-</span><span class="s1">40</span><span class="s0">%;</span>
+    <span class="s0">top: -</span><span class="s1">1</span><span class="s0">%;</span>
+    <span class="s0">width: </span><span class="s1">6</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">2</span><span class="s0">vmin;</span>
+    <span class="s0">transform-origin: right;</span>
+    <span class="s0">transform: translate(-</span><span class="s1">100</span><span class="s0">%,-</span><span class="s1">80</span><span class="s0">%) rotate(-</span><span class="s1">20</span><span class="s0">deg);</span>
+    <span class="s0">background-color: #</span><span class="s1">104</span><span class="s0">d4e;</span>
+    <span class="s0">border-radius: </span><span class="s1">2</span><span class="s0">vmin;</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--3 .flower__line{</span>
+    <span class="s0">background-image: linear-gradient(to top,#</span><span class="s1">142544</span><span class="s0">,#</span><span class="s1">104</span><span class="s0">d4e);</span>
+<span class="s0">}</span>
+
+
+<span class="s0">.f-wrapper--2 .flower__line{</span>
+    <span class="s0">height: </span><span class="s1">45</span><span class="s0">vmin;</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--2 .f{</span>
+    <span class="s0">transform: translateX(-</span><span class="s1">50</span><span class="s0">%) rotate(</span><span class="s1">20</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--3 .f{</span>
+    <span class="s0">transform: translate(-</span><span class="s1">350</span><span class="s0">%,-</span><span class="s1">50</span><span class="s0">%) rotate(-</span><span class="s1">120</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--2 .flower__leaf:not(:first-child){</span>
+    <span class="s0">width: </span><span class="s1">3</span><span class="s0">.</span><span class="s1">8</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">10</span><span class="s0">vmin;</span>
+    <span class="s0">background-image: linear-gradient(to bottom, #ff43b6 ,#c22887, #</span><span class="s1">1</span><span class="s0">a233a </span><span class="s1">99</span><span class="s0">%);</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--3 .flower__leaf:not(:first-child){</span>
+    <span class="s0">width: </span><span class="s1">3</span><span class="s0">.</span><span class="s1">8</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">10</span><span class="s0">vmin;</span>
+    <span class="s0">background-image: linear-gradient(to bottom, #CBC3E3 ,#DA70D6, #</span><span class="s1">1</span><span class="s0">a233a </span><span class="s1">99</span><span class="s0">%);</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--3 .flower__leaf--1{</span>
+    <span class="s0">width: </span><span class="s1">8</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">10</span><span class="s0">vmin;</span>
+    <span class="s0">bottom: </span><span class="s1">2</span><span class="s0">vmin;</span>
+    <span class="s0">background-color: #CBC3E3;</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--2 .flower__leaf--1{</span>
+    <span class="s0">width: </span><span class="s1">8</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">10</span><span class="s0">vmin;</span>
+    <span class="s0">bottom: </span><span class="s1">2</span><span class="s0">vmin;</span>
+    <span class="s0">background-color: #de118b;</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--2 .f .flower__leaf--8{</span>
+    <span class="s0">width: </span><span class="s1">10</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">9</span><span class="s0">vmin;</span>
+    <span class="s0">bottom: </span><span class="s1">3</span><span class="s0">vmin;</span>
+    <span class="s0">left: -</span><span class="s1">30</span><span class="s0">%;</span>
+    <span class="s0">transform: rotate(-</span><span class="s1">50</span><span class="s0">deg);</span>
+    <span class="s0">background-image: linear-gradient(to left bottom, #ff43b6 ,#</span><span class="s1">4</span><span class="s0">d1337);;</span>
+<span class="s0">}</span>
+
+<span class="s0">.f-wrapper--3 .f .flower__leaf--8{</span>
+    <span class="s0">width: </span><span class="s1">10</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">9</span><span class="s0">vmin;</span>
+    <span class="s0">left: -</span><span class="s1">10</span><span class="s0">% !important;</span>
+   <span class="s3">/* background-image: linear-gradient(to left bottom, #ad2be0 ,#712291);;*/</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__line{</span>
+    <span class="s0">width: </span><span class="s1">2</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">56</span><span class="s0">vmin;</span>
+    <span class="s0">background-image: linear-gradient(to left top,#</span><span class="s1">82</span><span class="s0">fdff </span><span class="s1">20</span><span class="s0">%,#</span><span class="s1">142544</span><span class="s0">,#</span><span class="s1">104</span><span class="s0">d4e);</span>
+    <span class="s0">border-radius: </span><span class="s1">4</span><span class="s0">vmin;</span>
+<span class="s0">}</span>
+
+<span class="s0">.f{</span>
+    <span class="s0">position: absolute;</span>
+    <span class="s0">top: </span><span class="s1">1</span><span class="s0">vmin;</span>
+    <span class="s0">left: </span><span class="s1">50</span><span class="s0">%;</span>
+    <span class="s0">transform: translateX(-</span><span class="s1">50</span><span class="s0">%) rotate(-</span><span class="s1">10</span><span class="s0">deg);</span>
+    <span class="s0">width: </span><span class="s1">2</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">2</span><span class="s0">vmin;</span>
+<span class="s0">}</span>
+
+
+<span class="s0">.flower__leaf{</span>
+    <span class="s0">position: absolute;</span>
+    <span class="s0">left: </span><span class="s1">50</span><span class="s0">%;</span>
+    <span class="s0">bottom: </span><span class="s1">2</span><span class="s0">vmin;</span>
+    <span class="s0">transform: translateX(-</span><span class="s1">50</span><span class="s0">%);</span>
+    <span class="s0">width: </span><span class="s1">5</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">14</span><span class="s0">vmin;</span>
+    <span class="s0">background-image: linear-gradient(to bottom,  #FFFF8F ,#FDDA0D, #</span><span class="s1">1</span><span class="s0">a233a </span><span class="s1">99</span><span class="s0">%);</span>
+
+    <span class="s0">clip-path: ellipse(</span><span class="s1">50</span><span class="s0">% </span><span class="s1">50</span><span class="s0">% at </span><span class="s1">50</span><span class="s0">% </span><span class="s1">50</span><span class="s0">%);</span>
+    <span class="s0">transform-origin: center bottom;</span>
+    <span class="s0">animation: open-flower </span><span class="s1">2</span><span class="s0">s </span><span class="s1">1</span><span class="s0">s backwards;</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__leaf--1{</span>
+    <span class="s0">width: </span><span class="s1">10</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">12</span><span class="s0">vmin;</span>
+    <span class="s0">bottom: </span><span class="s1">3</span><span class="s0">vmin;</span>
+    <span class="s0">border-radius: </span><span class="s1">50</span><span class="s0">% </span><span class="s1">50</span><span class="s0">% </span><span class="s1">50</span><span class="s0">% </span><span class="s1">50</span><span class="s0">% / </span><span class="s1">80</span><span class="s0">% </span><span class="s1">80</span><span class="s0">% </span><span class="s1">20</span><span class="s0">% </span><span class="s1">20</span><span class="s0">%;</span>
+    <span class="s0">background-color: #FFEA00;</span>
+    <span class="s0">background-image: none;</span>
+    <span class="s0">animation: open-flowe--middle  </span><span class="s1">1</span><span class="s0">.</span><span class="s1">4</span><span class="s0">s </span><span class="s1">1</span><span class="s0">s backwards;</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__leaf--2{</span>
+    <span class="s0">transform: translateX(-</span><span class="s1">50</span><span class="s0">%) rotate(-</span><span class="s1">30</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+<span class="s0">.flower__leaf--3{</span>
+    <span class="s0">transform: translateX(-</span><span class="s1">50</span><span class="s0">%) rotate(-</span><span class="s1">50</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+<span class="s0">.flower__leaf--4{</span>
+    <span class="s0">transform: translateX(-</span><span class="s1">50</span><span class="s0">%) rotate(-</span><span class="s1">70</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__leaf--5{</span>
+    <span class="s0">transform: translateX(-</span><span class="s1">50</span><span class="s0">%) rotate(</span><span class="s1">30</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__leaf--6{</span>
+    <span class="s0">transform: translateX(-</span><span class="s1">50</span><span class="s0">%) rotate(</span><span class="s1">50</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__leaf--7{</span>
+    <span class="s0">transform: translateX(-</span><span class="s1">50</span><span class="s0">%) rotate(</span><span class="s1">70</span><span class="s0">deg);</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__leaf--8{</span>
+    <span class="s0">width: </span><span class="s1">13</span><span class="s0">vmin;</span>
+    <span class="s0">height: </span><span class="s1">11</span><span class="s0">vmin;</span>
+    <span class="s0">bottom: </span><span class="s1">6</span><span class="s0">vmin;</span>
+    <span class="s0">left: -</span><span class="s1">30</span><span class="s0">%;</span>
+    <span class="s0">border-radius: none;</span>
+    <span class="s0">clip-path: none;</span>
+    <span class="s0">border-radius: </span><span class="s1">10</span><span class="s0">vmin </span><span class="s1">2</span><span class="s0">vmin </span><span class="s1">10</span><span class="s0">vmin </span><span class="s1">2</span><span class="s0">vmin;</span>
+    <span class="s0">transform: rotate(-</span><span class="s1">55</span><span class="s0">deg);</span>
+    <span class="s3">/*background-image: linear-gradient(to left bottom, #ffa085 ,#eb8b8b,#492f2f 98%);*/</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__fall-down--yellow{</span>
+    <span class="s0">animation: flower-fall-down-yellow  </span><span class="s1">8</span><span class="s0">s </span><span class="s1">1</span><span class="s0">.</span><span class="s1">2</span><span class="s0">s linear forwards;</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__fall-down--pink{</span>
+    <span class="s0">animation: flower-fall-down-pink  </span><span class="s1">5</span><span class="s0">s </span><span class="s1">1</span><span class="s0">.</span><span class="s1">2</span><span class="s0">s linear forwards;</span>
+<span class="s0">}</span>
+
+<span class="s0">.flower__fall-down--purple{</span>
+    <span class="s0">bottom: </span><span class="s1">4</span><span class="s0">vmin;</span>
+    <span class="s0">animation:flower-fall-down-purple  </span><span class="s1">6</span><span class="s0">s </span><span class="s1">1</span><span class="s0">.</span><span class="s1">2</span><span class="s0">s linear forwards, flower-falling </span><span class="s1">6</span><span class="s0">s </span><span class="s1">7</span><span class="s0">.</span><span class="s1">2</span><span class="s0">s linear infinite;</span>
+<span class="s0">}</span>
+
+
+<span class="s0">@keyframes open-flower{</span>
+        <span class="s1">0</span><span class="s0">%{</span>
+            <span class="s0">transform:  translateX(-</span><span class="s1">50</span><span class="s0">%) rotate(</span><span class="s1">0</span><span class="s0">);</span>
+        <span class="s0">}</span>
+<span class="s0">}</span>
+
+<span class="s0">@keyframes open-flowe--middle {</span>
+    <span class="s1">0</span><span class="s0">%{</span>
+        <span class="s0">opacity: </span><span class="s1">0</span><span class="s0">;</span>
+        <span class="s0">transform: translateX(-</span><span class="s1">50</span><span class="s0">%) scale(</span><span class="s1">0</span><span class="s0">);</span>
+    <span class="s0">}</span>
+<span class="s0">}</span>
+
+<span class="s0">@keyframes flower-fall-down-pink {</span>
+
+    <span class="s1">0</span><span class="s0">%{</span>
+        <span class="s0">transform: rotate(-</span><span class="s1">55</span><span class="s0">deg);</span>
+    <span class="s0">}</span>
+
+    <span class="s1">50</span><span class="s0">%{</span>
+        <span class="s0">transform: rotateX(-</span><span class="s1">100</span><span class="s0">deg);</span>
+    <span class="s0">}</span>
+
+    <span class="s1">100</span><span class="s0">%{</span>
+        <span class="s0">transform:translate(</span><span class="s1">2</span><span class="s0">vmin,</span><span class="s1">28</span><span class="s0">vmin);</span>
+    <span class="s0">}</span>
+
+<span class="s0">}</span>
+
+<span class="s0">@keyframes flower-fall-down-yellow {</span>
+
+    <span class="s1">0</span><span class="s0">%{</span>
+        <span class="s0">transform: rotate(-</span><span class="s1">55</span><span class="s0">deg);</span>
+    <span class="s0">}</span>
+
+    <span class="s1">50</span><span class="s0">%{</span>
+        <span class="s0">bottom: </span><span class="s1">3</span><span class="s0">vmin;</span>
+        <span class="s0">transform: rotateX(-</span><span class="s1">100</span><span class="s0">deg);</span>
+    <span class="s0">}</span>
+
+    <span class="s1">100</span><span class="s0">%{</span>
+        <span class="s0">transform:translate(</span><span class="s1">2</span><span class="s0">vmin,</span><span class="s1">70</span><span class="s0">vmin) rotate(</span><span class="s1">150</span><span class="s0">deg);</span>
+    <span class="s0">}</span>
+
+<span class="s0">}</span>
+
+<span class="s0">@keyframes flower-fall-down-purple {</span>
+
+    <span class="s1">0</span><span class="s0">%{</span>
+        <span class="s0">transform: rotate(-</span><span class="s1">50</span><span class="s0">deg);</span>
+    <span class="s0">}</span>
+
+    <span class="s1">25</span><span class="s0">%{</span>
+        <span class="s0">bottom: </span><span class="s1">1</span><span class="s0">vmin ;</span>
+        <span class="s0">transform: rotateX(-</span><span class="s1">100</span><span class="s0">deg);</span>
+        <span class="s0">perspective: </span><span class="s1">0</span><span class="s0">px;</span>
+    <span class="s0">}</span>
+
+    <span class="s1">50</span><span class="s0">%{</span>
+        <span class="s0">perspective: </span><span class="s1">0</span><span class="s0">px;</span>
+        <span class="s0">transform:translate(-</span><span class="s1">30</span><span class="s0">vmin,</span><span class="s1">2</span><span class="s0">vmin) rotate(</span><span class="s1">90</span><span class="s0">deg);</span>
+    <span class="s0">}</span>
+
+    <span class="s1">75</span><span class="s0">%{</span>
+        <span class="s0">perspective: </span><span class="s1">0</span><span class="s0">px;</span>
+        <span class="s0">transform:translate(-</span><span class="s1">34</span><span class="s0">vmin,-</span><span class="s1">2</span><span class="s0">vmin);</span>
+    <span class="s0">}</span>
+
+    <span class="s1">100</span><span class="s0">%{</span>
+        <span class="s0">transform-origin: center;</span>
+        <span class="s0">transform:translate(-</span><span class="s1">34</span><span class="s0">vmin,-</span><span class="s1">2</span><span class="s0">vmin) rotateY(-</span><span class="s1">80</span><span class="s0">deg) rotateX(</span><span class="s1">35</span><span class="s0">deg);</span>
+    <span class="s0">}</span>
+
+<span class="s0">}</span>
+
+<span class="s0">@keyframes flower-falling {</span>
+    <span class="s1">0</span><span class="s0">%,</span><span class="s1">100</span><span class="s0">%{</span>
+        <span class="s0">transform-origin: center;</span>
+        <span class="s0">transform:translate(-</span><span class="s1">34</span><span class="s0">vmin,-</span><span class="s1">2</span><span class="s0">vmin) rotateY(-</span><span class="s1">80</span><span class="s0">deg) rotateX(</span><span class="s1">35</span><span class="s0">deg);</span>
+    <span class="s0">}</span>
+
+    <span class="s1">25</span><span class="s0">%{</span>
+        <span class="s0">transform-origin: center;</span>
+        <span class="s0">transform:translate(-</span><span class="s1">34</span><span class="s0">.</span><span class="s1">4</span><span class="s0">vmin,-</span><span class="s1">2</span><span class="s0">vmin) rotateY(-</span><span class="s1">84</span><span class="s0">deg) rotateX(</span><span class="s1">35</span><span class="s0">deg);</span>
+    <span class="s0">}</span>
+
+    <span class="s1">50</span><span class="s0">%{</span>
+        <span class="s0">transform-origin: center;</span>
+        <span class="s0">transform:translate(-</span><span class="s1">32</span><span class="s0">vmin,-</span><span class="s1">4</span><span class="s0">.</span><span class="s1">2</span><span class="s0">vmin) rotateY(-</span><span class="s1">80</span><span class="s0">deg) rotateX(</span><span class="s1">35</span><span class="s0">deg);</span>
+    <span class="s0">}</span>
+
+    <span class="s1">75</span><span class="s0">%{</span>
+        <span class="s0">transform-origin: center;</span>
+        <span class="s0">transform:translate(-</span><span class="s1">36</span><span class="s0">vmin,</span><span class="s1">1</span><span class="s0">.</span><span class="s1">1</span><span class="s0">vmin) rotateY(-</span><span class="s1">80</span><span class="s0">deg) rotateX(</span><span class="s1">35</span><span class="s0">deg);</span>
+    <span class="s0">}</span>
+</pre>
+</body>
+</html>
